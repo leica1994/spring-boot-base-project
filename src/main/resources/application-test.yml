@@ -21,8 +21,3 @@ spring:
       ddl-auto: update
 mybatis:
   type-aliases-package: com.leica.entity
-pagehelper:
-  helper-dialect: mysql
-  reasonable: true
-  support-methods-arguments: true
-  params: count=countSql

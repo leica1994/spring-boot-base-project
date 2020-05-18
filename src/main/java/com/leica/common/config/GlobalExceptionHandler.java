@@ -48,12 +48,7 @@ public class GlobalExceptionHandler {
     }
 
     private void writeExceptionToLog(Exception ex) {
-        StringWriter sw = new StringWriter();
-        PrintWriter pw = new PrintWriter(sw, true);
-        ex.printStackTrace(pw);
-        pw.flush();
-        sw.flush();
-        log.error(sw.toString());
+        logger.error("出现异常:", ex);
     }
 
 }

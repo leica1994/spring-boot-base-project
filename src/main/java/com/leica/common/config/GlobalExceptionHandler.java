@@ -48,7 +48,7 @@ public class GlobalExceptionHandler {
     }
 
     private void writeExceptionToLog(Exception ex) {
-        logger.error("出现异常:", ex);
+        log.error("出现异常:", ex);
     }
 
 }
